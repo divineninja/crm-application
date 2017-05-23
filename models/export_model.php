@@ -1,0 +1,1 @@
+<?phpclass export_Model extends Model {    function __construct() {        parent::__construct();    }		public function query_from_database( $table_name = '' ){		return $this->select("SELECT * FROM $table_name");	}	}
