@@ -1,0 +1,53 @@
+<!--Underscore template for daily in 1 week description-->
+   <script type="text/html" id='dailyDescription'>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Applications</th>
+                </tr>
+            </thead>
+            <tbody>
+			<% if( !items.length ){ %> 
+				<tr>
+					<td colspan="2">No Data Found.</td>
+				</tr>
+			<% }else{ %>	
+                <%_.each(items, function(value,key){ %>
+                    <tr>
+                        <td><%=value[0]%></td>
+                        <td><%=value[1]%></td>
+                    </tr>
+                <% }); %>
+            <% } %>
+            </tbody>
+        </table>
+   </script>
+<!--End of template-->
+
+<!--Underscore template for weekly in 1 month description-->
+   <script type="text/html" id='weeklyDescription'>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Applications</th>
+                </tr>
+            </thead>
+            <tbody>
+			<% if( !items.length ){ %> 
+				<tr>
+					<td colspan="2">No Data Found.</td>
+				</tr>
+			<% }else{ %>	
+                <%_.each(items, function(value,key){ %>
+                    <tr>
+                        <td><%=value[0]%></td>
+                        <td><%=value[1]%></td>
+                    </tr>
+                <% }); %>
+            <% } %>
+            </tbody>
+        </table>
+   </script>
+<!--End of template-->
